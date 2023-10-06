@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+{% extends "AppBlogTB/padre.html"%}
+{% load static %}
+
+{% block title %} 
+{% endblock title %}
+
+{% block section5 %}
+
+<form action=""  method="POST">
+
+    {% csrf_token %}
+
+    <table>
+        {{miFormulario.as_table}}
+    </table>
+
+    <input type="submit" value="Guardar Formulario">
+
+</form>
+
+{% endblock section5 %} 

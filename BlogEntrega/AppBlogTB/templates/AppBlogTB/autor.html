@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends "AppBlogTB/padre.html"%}
+{% load static %}
+
+{% block section1 %}
+
+
+<!-- section1 start-->
+<div class="marketing_section layout_padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="job_section">
+                    <h1 class="jobs_text"><p class style ="color: #2b7a96 ;font-family: Arial; font-size:160%">Autores</h1>
+                    <p class="dummy_text">Nuestros autores son reconocidos profesionales del área de las ciencias sociales, mayoritariamente especialistas en Economía. Son avalados por el sector educacional, investigativo y privado.</p>
+                    <div class="apply_bt"><a href="{% url 'Escritorform' %}">Apply now <br> (Formulario Escritor)</a></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="image_1 padding_0"><img src="{% static 'AppBlogTB/images/img-1.png' %}"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- section1 end-->
+
+{% endblock section1 %}
