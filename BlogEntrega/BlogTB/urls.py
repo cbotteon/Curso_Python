@@ -17,15 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from .views import saludo, bienvenida, fecha, usando_loader
+from .views import saludo, bienvenida, fecha
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/', saludo),
-    path('bienvenida', bienvenida),
-    path('fecha', fecha),
-    path('usando_loader/', usando_loader),
+    path('fecha/', fecha),
     path('App/', include('AppBlogTB.urls')),
 ]
 

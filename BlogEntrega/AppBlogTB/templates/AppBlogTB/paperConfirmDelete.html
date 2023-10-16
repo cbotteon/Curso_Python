@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{% extends "AppBlogTB/padre.html"%}
+{% load static %}
+
+{% block section5 %}
+
+<form action=""  method="POST">
+
+    {% csrf_token %}
+
+    ¿Estás seguro que deseas eliminar el paper "{{ object }}"?
+    
+    <input type="submit" value="Sí quiero borrar">
+
+</form>
+
+
+{% endblock section5 %} 

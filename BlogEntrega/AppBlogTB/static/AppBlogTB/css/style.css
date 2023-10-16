@@ -312,9 +312,11 @@ button {
     width: 70%;
     margin: 0 auto;
     text-align: center;
-    color: #ffffff;
+    color: #0a0b24;
+    font-weight: bold;
     padding-top: 50px;
     display: flex;
+    font-size: 18px;
 }
 
 .bt_main{

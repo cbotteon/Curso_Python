@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "AppBlogTB/padre.html"%}
+
+{% load static %}
+
+{% block main %}
+    <ul>
+        {% for A in apellidos %}
+        <li> {{ A }} </li>
+        {% endfor %}
+    </ul>
+{% endblock main %}

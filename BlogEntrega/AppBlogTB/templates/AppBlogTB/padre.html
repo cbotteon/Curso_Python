@@ -47,6 +47,9 @@
                    <a class="nav-link" href="{% url 'Inicio' %}">INICIO</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="{% url 'Bienvenida' %}">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
                    <a class="nav-link" href="{% url 'Paper' %}">PAPERS</a>
                 </li>
                 <li class="nav-item">
@@ -59,11 +62,13 @@
                    <a class="nav-link" href="{% url 'Lector' %}">LECTORES</a>
                 </li>
                 <li class="nav-item">
-                   <a class="nav-link" href="#">MORE</a>
+                   <a class="nav-link" href="{% url 'More' %}">MÁS</a>
                 </li>
             </ul>
         </div>
-         <div class="login_text"><a href="login.html">LOGIN HERE</a></div>
+        <div class="login_text"><a href="{% url 'Login' %}"> <center>LOGIN</center></a></div>
+		 <div class="login_text"><a href="{% url 'Logout' %}"><center>LOGOUT</center></a></div>
+        <div class="login_text"><a href="{% url 'Register' %}"><center>REGISTER</center></a></div>
     </nav>
 	<!-- header section end-->
 
@@ -83,17 +88,18 @@
 	{% endblock section5 %} 
 
    {% block section6 %}
-	{% endblock section6 %} 
+	{% endblock section6 %}
 
+   {% block section7 %}
+	{% endblock section7 %}
+   
+   {% block section10 %}
+	{% endblock section10 %} 
+   
 	<!-- footer section start-->
 	<div class="footer_section layout_padding">
 		<div class="container">
-			<h1 class="subscribr_text">Subscribe Now</h1>
-			<p class="lorem_text">There are many variations of passages of Lorem Ipsum available, but the majority have </p>
-			<div class="box_main_2">
-			    <textarea type="" class="email_bt_2" placeholder="Enter Your Email" name=""></textarea>
-		    </div>
-		    <button class="subscribe_bt_2"><a href="#">Subscribe</a></button>
+			<h1 class="subscribr_text"> <br> <br> Ofrecemos los mejores papers <br><br><br> </h1>
 		</div>
 	</div>
 	<!-- footer section end-->

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+{% extends "AppBlogTB/padre.html"%}
+{% load static %}
+
+{% block title %} 
+{% endblock title %}
+
+{% block section5 %}
+<h2>{{mensaje}}</h2>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        
+        <button type="submit"> Registrate!!! </button>
+    </form>
+
+{% endblock section5 %}

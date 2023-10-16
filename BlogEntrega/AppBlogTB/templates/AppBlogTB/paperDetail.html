@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+{% extends "AppBlogTB/padre.html"%}
+{% load static %}
+
+
+{% block section5 %}
+
+
+<body>
+
+    <p> Título del trabajo: <i>{{paper.titulo}} </i></p>
+    <p> Año de publicación: <i>{{paper.anio_publicacion}} </i></p>    
+    
+        <a href="{% url 'List' %}">  Regresar </a>
+    </p>
+
+</body>
+</html>
+
+
+{% endblock section5 %}
