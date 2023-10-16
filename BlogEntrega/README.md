@@ -18,7 +18,7 @@ Se han utilizado.
 * Html.
 * Bootstrap.
 * SQL.
-La plantilla base sobre la cual se ha trabajado se ha obtenido de:
+* La plantilla base sobre la cual se ha trabajado se ha obtenido de:
 https://www.free-css.com/free-css-templates
 ## Contacto
 -Linkedin -WhatsApp
